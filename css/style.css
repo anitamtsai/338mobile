@@ -9,43 +9,117 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-header {
-  background-color: lightgrey;
-  padding: 22px 18px;
-
+h1,h2 {
+    font-family: 'Lexend';
 }
 
-.profile-grid {
-  max-width: 1000px;
-  margin: 0 auto;
+
+/* .profile-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   gap: 14px;
-}
+} */
 
 header img{
-    width: 50%;
+    width: 80%;
     max-height: none; 
+    margin:auto;
+    display:block
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+  width: 90%;
+  border-radius: 10px;
+  background: #003b49;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+  font-family: 'Carter One';
+  margin: auto;
+}
 
+/*https://codepen.io/kiran-r-raj/pen/QWqpgPe got nav design */
 ul{
-    display: flex;
-    flex-direction: column;
-    
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-nav a{
-     border: 2px dotted purple;
+
+
+li {
+  position: relative;
+  width: 32%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  margin: 0 20px;
+  border: 2px solid #f2c75c;
+  overflow: hidden;
 }
+
+li a {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #f2c75c;
+  z-index: 10;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+li:hover a {
+  color: #003b49;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  transform: skew(30deg);
+  background: #f2c75c;
+  transition: width 400ms ease;
+}
+
+li:hover:before {
+  width: 120%;
+}
+/* 
+li:nth-child(2):before {
+  transform: skew(-20deg);
+}
+
+.item:nth-child(3):before {
+  transform: skew(0deg);
+}
+
+.item:nth-child(4):before {
+  width: 180px;
+  height: 0%;
+  bottom: 0px;
+  transition: height 400ms ease;
+} */
+
+
+
+
+
+
 
 .skip a{
      position: absolute; 
-     top: 10px; 
+     top: -65px; 
      transition: top, 1s, ease-in;
 }
 
