@@ -1,3 +1,4 @@
+
 body{
     box-sizing: border-box;
     margin: 1%;
@@ -11,6 +12,11 @@ html{
 
 h1,h2 {
     font-family: 'Lexend';
+
+}
+
+h3{
+    font-family:'Lexend';
 }
 
 header img{
@@ -24,7 +30,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 5px;
   height: 80px;
   width: 90%;
   border-radius: 10px;
@@ -42,8 +48,6 @@ ul{
   justify-content: flex-start;
   align-items: center;
 }
-
-
 
 li {
   position: relative;
@@ -122,15 +126,15 @@ img{
 }
 
 article{
-    padding: 2px;
+    padding: 4px;
     border: 2px solid black;
 }
 
 summary{
-    width: 90%;
+    width: auto;
     padding: 10px;
     margin-top: 5px;
-    border: solid black 2px;
+    border: solid black 1px;
     background-color:lightgrey;
     align-items: center;
     transition: background-color 1s ease;
@@ -150,8 +154,8 @@ summary:hover{
     gap: 20px;
     margin-top: 50px;
     justify-content: center;
-  
 }
+
 
 .gold { 
     /* grid-column: 2; 
@@ -180,13 +184,14 @@ summary:hover{
     background-color: #faf4ee;
 }
 
+/* below code for animation inspired by Colleen and W3S */
 .box {
     margin: 10px;
     display: inline-block;
-    opacity: 0; /* Start hidden */
+    opacity: 0; 
     animation-name: fadeInSlide;
     animation-duration: 1s;
-    animation-fill-mode: forwards; /* Keep final state */
+    animation-fill-mode: forwards; 
     animation-timing-function: ease-in-out;
   }
 
@@ -211,14 +216,6 @@ summary:hover{
     max-height: 150px;
     object-fit: cover;
 }
-*/
-.podium {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: end; /* Keeps them sitting on the floor */
-    background-color: yellow;
-    color: #444;
-}
 
 
 .meet-card{
@@ -235,7 +232,7 @@ summary:hover{
         transition:none;   
     }
     .spacer img:active{
-        transform: none
+        transform: none;
     }
 }
 
@@ -253,11 +250,4 @@ summary:hover{
         color:black;
     }
    
-}
-ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
